@@ -8,6 +8,8 @@ export const projects: Project[] = [
     subtitle: "한국신발디자인어워드",
     overview: "한국신발디자인협회가 주최하고 부산광역시가 후원한 국내 대표 신발 디자인 공모전으로, AI 기반 첨단 신발을 주제로 멀티 유즈 풋웨어를 디자인한 프로젝트 입니다.",
     role: "개인 출품",
+    winnerLink: "https://k-fda.kr/winner",
+    externalLink: "https://drive.google.com/file/d/1IfTXzEE1GBgnpFHl1ldiEg5k8TlTSTe0/view?usp=sharing",
     perspective: "기존 외형 중심 접근에서 벗어나 기능 분석 → 구조 설계 → 형태 결정 프로세스로 전환",
     deliverables: [
       "기능 분석 기반 러닝화 비주얼 콘셉트",
@@ -60,6 +62,7 @@ export const projects: Project[] = [
     subtitle: "패션상품기획공모전",
     overview: "브랜드 ‘CCOMAQUE(꼬마크)’의 상품을 기획하고, 사용자 경험을 기반으로 AI 맞춤 디자인 모바일 앱 UX를 시각적으로 설계한 프로젝트입니다.",
     role: "팀 프로젝트 참여 (소비자 조사 분석 및 UX/UI 비주얼 디자인)",
+    videoLink: "https://drive.google.com/file/d/1_TOR1LzCiiJbpkJBVyJWchm_vwv9uGp0/view?usp=share_link",
     perspective: "사용자가 어떻게 브랜드를 경험하는가를 중심에 두고, AI 기반 맞춤 디자인을 핵심 솔루션으로 설정했습니다.",
     deliverables: [
       "브랜드·상품 전략 인포그래픽",

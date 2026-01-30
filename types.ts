@@ -20,5 +20,7 @@ export interface Project {
   mainImage: string;
   additionalAssets: string[];
   externalLink?: string; // 외부 연결 링크 필드
-  pressLink?: string; // 보도자료 연결 링크 필드 추가
+  pressLink?: string; // 보도자료 연결 링크 필드
+  videoLink?: string; // 앱 디테일 영상 연결 링크 필드
+  winnerLink?: string; // 수상작 게시 링크 필드 추가
 }

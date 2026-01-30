@@ -32,7 +32,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           {children}
           <div className="absolute inset-0 bg-black/0 group-hover/link:bg-black/10 transition-colors flex items-center justify-center">
             <div className="opacity-0 group-hover/link:opacity-100 bg-white/90 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest text-black shadow-lg transition-all transform translate-y-2 group-hover/link:translate-y-0">
-              Visit Site
+              {project.id === '01' ? 'View High-Res' : 'Visit Site'}
             </div>
           </div>
         </a>
@@ -160,13 +160,29 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
                   </ImageWrapper>
                 </div>
                 
-                {project.pressLink && (
-                  <div className="flex justify-center">
+                <div className="flex flex-col items-center space-y-3">
+                  {project.winnerLink && (
+                    <a 
+                      href={project.winnerLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="group flex items-center space-x-2 px-4 py-2.5 bg-white border border-gray-100 rounded-full shadow-sm hover:shadow-md hover:border-gray-200 transition-all active:scale-95 w-fit"
+                    >
+                      <div className="bg-gray-50 p-1.5 rounded-full group-hover:bg-amber-50 transition-colors">
+                        <svg className="w-4 h-4 text-gray-400 group-hover:text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                        </svg>
+                      </div>
+                      <span className="text-[11px] font-bold uppercase tracking-widest text-gray-400 group-hover:text-black transition-colors">Winner's Gallery</span>
+                    </a>
+                  )}
+
+                  {project.pressLink && (
                     <a 
                       href={project.pressLink} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="group flex items-center space-x-2 px-4 py-2.5 bg-white border border-gray-100 rounded-full shadow-sm hover:shadow-md hover:border-gray-200 transition-all active:scale-95"
+                      className="group flex items-center space-x-2 px-4 py-2.5 bg-white border border-gray-100 rounded-full shadow-sm hover:shadow-md hover:border-gray-200 transition-all active:scale-95 w-fit"
                     >
                       <div className="bg-gray-50 p-1.5 rounded-full group-hover:bg-blue-50 transition-colors">
                         <svg className="w-4 h-4 text-gray-400 group-hover:text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -175,8 +191,25 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
                       </div>
                       <span className="text-[11px] font-bold uppercase tracking-widest text-gray-400 group-hover:text-black transition-colors">Press Release</span>
                     </a>
-                  </div>
-                )}
+                  )}
+
+                  {project.videoLink && (
+                    <a 
+                      href={project.videoLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="group flex items-center space-x-2 px-4 py-2.5 bg-white border border-gray-100 rounded-full shadow-sm hover:shadow-md hover:border-gray-200 transition-all active:scale-95 w-fit"
+                    >
+                      <div className="bg-gray-50 p-1.5 rounded-full group-hover:bg-red-50 transition-colors">
+                        <svg className="w-4 h-4 text-gray-400 group-hover:text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </div>
+                      <span className="text-[11px] font-bold uppercase tracking-widest text-gray-400 group-hover:text-black transition-colors">App Demo Video</span>
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </div>
