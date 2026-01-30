@@ -25,7 +25,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
         className="absolute inset-0 bg-black/80 backdrop-blur-sm" 
         onClick={onClose}
       />
-      <div className="bg-white w-full max-w-5xl max-h-full overflow-y-auto relative rounded-2xl shadow-2xl fade-in">
+      <div className="bg-white w-full max-w-6xl max-h-full overflow-y-auto relative rounded-2xl shadow-2xl fade-in">
         <button 
           onClick={onClose}
           className="absolute top-6 right-6 p-2 rounded-full hover:bg-gray-100 transition-colors z-10"
@@ -131,18 +131,22 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
                 <h4 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">My Role</h4>
                 <p className="text-sm text-gray-700 leading-relaxed">{project.role}</p>
               </div>
-              <div className="rounded-xl overflow-hidden shadow-sm border border-gray-100">
-                <img src={project.mainImage} alt={project.title} className="w-full h-auto" />
+              <div className="rounded-xl overflow-hidden shadow-sm border border-gray-100 flex items-center justify-center p-4 bg-gray-50">
+                <img src={project.mainImage} alt={project.title} className="max-w-full h-auto object-contain" />
               </div>
             </div>
           </div>
 
-          <section className="pt-12 border-t border-gray-100">
+          <section className="pt-12 border-t border-gray-100 overflow-x-auto">
             <h4 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-8">Additional Assets</h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div className="flex flex-col sm:flex-row items-start gap-8">
               {project.additionalAssets.map((asset, i) => (
-                <div key={i} className="rounded-xl overflow-hidden bg-gray-100 group">
-                  <img src={asset} alt={`${project.title} asset ${i}`} className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-700" />
+                <div key={i} className="rounded-xl overflow-hidden bg-gray-50 border border-gray-100 flex-shrink-0">
+                  <img 
+                    src={asset} 
+                    alt={`${project.title} asset ${i}`} 
+                    className="h-[300px] md:h-[500px] w-auto object-contain" 
+                  />
                 </div>
               ))}
             </div>

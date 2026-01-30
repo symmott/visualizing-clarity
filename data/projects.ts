@@ -18,17 +18,17 @@ export const projects: Project[] = [
       "후원기업상 수상",
       "시상 기업 대표로부터 기능 접근이 명확하고 데이터를 근거로 한 설계가 돋보인다는 평가"
     ],
-    mainImage: "https://picsum.photos/seed/shoe/1200/800",
+    mainImage: "https://raw.githubusercontent.com/symmott/visualizing-clarity/934dfc3760b71d9b5c3159b08e9ad405b6ff71bc/1-1.jpg",
     additionalAssets: [
-      "https://picsum.photos/seed/shoe1/800/600",
-      "https://picsum.photos/seed/shoe2/800/600"
+      "https://raw.githubusercontent.com/symmott/visualizing-clarity/934dfc3760b71d9b5c3159b08e9ad405b6ff71bc/1-2.png",
+      "https://raw.githubusercontent.com/symmott/visualizing-clarity/934dfc3760b71d9b5c3159b08e9ad405b6ff71bc/1-3.png"
     ]
   },
   {
     id: "02",
     title: "MODE Fashion Magazine",
     subtitle: "Print Magazine & Digital Media",
-    overview: "MODE는 패션디자인학과 내에서 창립·운영한 패션 매거진으로, 실물 잡지에서 SNS 기반 디지털 매거진으로 확장하며 매체 변화에 따라 정보 구조와 전달 방식을 재설계한 프로젝트입니다.",
+    overview: "MODE는 패션디자인학과 내에서 창립·운영한 패션 매거진으로, 실물 잡지에서 SNS 기반 디지털 매거진으로 확장하며 매체 변화에 따라 정보 구조와 전달 방식에 대한 연구를 진행한 프로젝트입니다.",
     role: "공동 창립 멤버, 비주얼 디자인 및 콘텐츠 구조 설계 담당",
     chapters: [
       {
@@ -46,10 +46,10 @@ export const projects: Project[] = [
         outcome: ["릴스 최고 조회수 12만 회 기록", "계정 개설 3개월 만에 팔로워 500명 달성"]
       }
     ],
-    mainImage: "https://picsum.photos/seed/magazine/1200/800",
+    mainImage: "https://raw.githubusercontent.com/symmott/visualizing-clarity/934dfc3760b71d9b5c3159b08e9ad405b6ff71bc/2-1.png",
     additionalAssets: [
-      "https://picsum.photos/seed/mag1/800/600",
-      "https://picsum.photos/seed/mag2/800/600"
+      "https://raw.githubusercontent.com/symmott/visualizing-clarity/934dfc3760b71d9b5c3159b08e9ad405b6ff71bc/2-2.JPG",
+      "https://raw.githubusercontent.com/symmott/visualizing-clarity/934dfc3760b71d9b5c3159b08e9ad405b6ff71bc/2-3.jpg"
     ]
   },
   {
@@ -68,10 +68,10 @@ export const projects: Project[] = [
       "공모전 입선",
       "브랜드 대표로부터 기획 의도가 직관적으로 이해된다는 평가"
     ],
-    mainImage: "https://picsum.photos/seed/planning/1200/800",
+    mainImage: "https://raw.githubusercontent.com/symmott/visualizing-clarity/934dfc3760b71d9b5c3159b08e9ad405b6ff71bc/3-1.jpg",
     additionalAssets: [
-      "https://picsum.photos/seed/plan1/800/600",
-      "https://picsum.photos/seed/plan2/800/600"
+      "https://raw.githubusercontent.com/symmott/visualizing-clarity/934dfc3760b71d9b5c3159b08e9ad405b6ff71bc/3-2.jpg",
+      "https://raw.githubusercontent.com/symmott/visualizing-clarity/934dfc3760b71d9b5c3159b08e9ad405b6ff71bc/3-3.jpg"
     ]
   },
   {
@@ -90,10 +90,10 @@ export const projects: Project[] = [
       "과잠바 제작 후 높은 만족도로 바람막이, 반팔까지 추가 제작",
       "학과 정체성이 잘 드러난다는 긍정적 피드백 확보"
     ],
-    mainImage: "https://picsum.photos/seed/tdo/1200/800",
+    mainImage: "https://raw.githubusercontent.com/symmott/visualizing-clarity/934dfc3760b71d9b5c3159b08e9ad405b6ff71bc/4-1.png",
     additionalAssets: [
-      "https://picsum.photos/seed/tdo1/800/600",
-      "https://picsum.photos/seed/tdo2/800/600"
+      "https://raw.githubusercontent.com/symmott/visualizing-clarity/934dfc3760b71d9b5c3159b08e9ad405b6ff71bc/4-3.jpg",
+      "https://raw.githubusercontent.com/symmott/visualizing-clarity/934dfc3760b71d9b5c3159b08e9ad405b6ff71bc/4-2.jpg"
     ]
   }
 ];

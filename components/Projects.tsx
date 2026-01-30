@@ -24,15 +24,15 @@ const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
               className="group cursor-pointer"
               onClick={() => onSelectProject(project)}
             >
-              <div className="relative overflow-hidden aspect-[4/3] rounded-2xl bg-gray-100 mb-6 shadow-sm border border-gray-50">
+              <div className="relative overflow-hidden aspect-[4/3] rounded-2xl bg-gray-50 mb-6 shadow-sm border border-gray-100 flex items-center justify-center p-8">
                 <img 
                   src={project.mainImage} 
                   alt={project.title} 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                  className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700 ease-out z-0"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
-                <div className="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
-                  <div className="bg-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest flex items-center shadow-lg">
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/[0.02] transition-colors duration-300" />
+                <div className="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300 z-10">
+                  <div className="bg-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest flex items-center shadow-lg border border-gray-100">
                     View Details
                     <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                   </div>

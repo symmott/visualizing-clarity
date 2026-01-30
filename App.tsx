@@ -12,7 +12,6 @@ const App: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   useEffect(() => {
-    // Reveal animation observer
     const observerOptions = {
       threshold: 0.15,
       rootMargin: "0px 0px -50px 0px"
@@ -58,7 +57,6 @@ const App: React.FC = () => {
         </div>
       </main>
 
-      {/* Modal for project details */}
       <ProjectModal 
         project={selectedProject} 
         onClose={handleCloseModal} 
@@ -69,9 +67,6 @@ const App: React.FC = () => {
           <p className="text-xs text-gray-400 uppercase tracking-widest font-bold">
             &copy; {new Date().getFullYear()} VC. ALL RIGHTS RESERVED.
           </p>
-          <div className="flex space-x-6">
-            {/* 소셜 링크 삭제 (요청사항 반영) */}
-          </div>
         </div>
       </footer>
     </div>
