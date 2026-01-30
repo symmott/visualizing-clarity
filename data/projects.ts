@@ -30,6 +30,8 @@ export const projects: Project[] = [
     subtitle: "Print Magazine & Digital Media",
     overview: "MODE는 패션디자인학과 내에서 창립·운영한 패션 매거진으로, 실물 잡지에서 SNS 기반 디지털 매거진으로 확장하며 매체 변화에 따라 정보 구조와 전달 방식에 대한 연구를 진행한 프로젝트입니다.",
     role: "공동 창립 멤버, 비주얼 디자인 및 콘텐츠 구조 설계 담당",
+    externalLink: "https://www.instagram.com/m0de_magazine?igsh=c2sybGw1aXk0cGxj",
+    pressLink: "http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=00&key=20221123.22017006912",
     chapters: [
       {
         title: "Chapter A. Print Magazine",
@@ -80,6 +82,7 @@ export const projects: Project[] = [
     subtitle: "Multi-department Apparel Design & Production Project",
     overview: "4개 학과의 아이덴티티를 반영한 로고와 의류 비주얼을 설계한 자체제작 단체복 브랜딩 프로젝트입니다.",
     role: "프로젝트 팀장, 비주얼 디자인 전반 및 제작 커뮤니케이션 담당",
+    pressLink: "https://www.busan.com/view/newsunicollvill/view.php?code=2023062317221215010",
     perspective: "단순한 로고 배치가 아닌 각 학과의 성격을 시각 언어로 해석하는 브랜딩 작업으로 접근했습니다.",
     deliverables: [
       "학과별 로고 디자인 4종",

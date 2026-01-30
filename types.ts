@@ -19,4 +19,6 @@ export interface Project {
   chapters?: ProjectChapter[];
   mainImage: string;
   additionalAssets: string[];
+  externalLink?: string; // 외부 연결 링크 필드
+  pressLink?: string; // 보도자료 연결 링크 필드 추가
 }

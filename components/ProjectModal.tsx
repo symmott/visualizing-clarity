@@ -19,6 +19,28 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
 
   if (!project) return null;
 
+  const ImageWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+    if (project.externalLink) {
+      return (
+        <a 
+          href={project.externalLink} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="block group/link relative"
+          title="Visit Link"
+        >
+          {children}
+          <div className="absolute inset-0 bg-black/0 group-hover/link:bg-black/10 transition-colors flex items-center justify-center">
+            <div className="opacity-0 group-hover/link:opacity-100 bg-white/90 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest text-black shadow-lg transition-all transform translate-y-2 group-hover/link:translate-y-0">
+              Visit Site
+            </div>
+          </div>
+        </a>
+      );
+    }
+    return <div className="block">{children}</div>;
+  };
+
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center px-4 py-6 md:p-10">
       <div 
@@ -131,8 +153,30 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
                 <h4 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">My Role</h4>
                 <p className="text-sm text-gray-700 leading-relaxed">{project.role}</p>
               </div>
-              <div className="rounded-xl overflow-hidden shadow-sm border border-gray-100 flex items-center justify-center p-4 bg-gray-50">
-                <img src={project.mainImage} alt={project.title} className="max-w-full h-auto object-contain" />
+              <div className="space-y-4">
+                <div className="rounded-xl overflow-hidden shadow-sm border border-gray-100 bg-gray-50 p-4">
+                  <ImageWrapper>
+                    <img src={project.mainImage} alt={project.title} className="max-w-full h-auto object-contain mx-auto" />
+                  </ImageWrapper>
+                </div>
+                
+                {project.pressLink && (
+                  <div className="flex justify-center">
+                    <a 
+                      href={project.pressLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="group flex items-center space-x-2 px-4 py-2.5 bg-white border border-gray-100 rounded-full shadow-sm hover:shadow-md hover:border-gray-200 transition-all active:scale-95"
+                    >
+                      <div className="bg-gray-50 p-1.5 rounded-full group-hover:bg-blue-50 transition-colors">
+                        <svg className="w-4 h-4 text-gray-400 group-hover:text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2zM7 8h10M7 12h10M7 16h10" />
+                        </svg>
+                      </div>
+                      <span className="text-[11px] font-bold uppercase tracking-widest text-gray-400 group-hover:text-black transition-colors">Press Release</span>
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           </div>
